@@ -34,6 +34,8 @@
 }
 
 .haeder__title{
+  padding: 0;
+  margin: 0;
   width: 730px;
   margin-left: 64px;
   z-index:4;
@@ -43,13 +45,14 @@
 }
 
 .haeder__subtitle{
+  margin: 0;
+  padding: 0;
   position: absolute;
   bottom: 30px;
   left: 64px;
   width: 388px;
   z-index: 4;
   font-size: 18px;
-  font-weight: normal;
   line-height: 25px;
 }
 
@@ -78,20 +81,23 @@
 }
 
 .description{
-  padding: 0;
+  padding: 100px 0 100px;
   margin: 0;
 
   color:#000000;
 }
 
 .two-columns{
+  margin-left: auto;
+  margin-right: auto;
   width: 80%;
-  margin: 100px auto 100px;
   display: flex;
   justify-content: space-between;
 }
 
-.two-columns__brif{
+.two-columns__brief{
+  margin: 0;
+  padding: 0;
   width: 175px;
 
 font-size: 18px;
@@ -105,6 +111,8 @@ color: #2f80ed;
   min-width: 784px;
 }
 .two-columns__paragraph{
+  margin: 0;
+  padding: 0;
   padding-bottom: 30px;
 
   font-size: 24px;
@@ -134,7 +142,8 @@ color: #2f80ed;
 }
 
 .section-title{
-  margin-top: 100px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 20px;
   width: 60%;
 
@@ -153,6 +162,7 @@ color: #2f80ed;
 }
 
 .table{
+  padding: 0;
   margin: 0 auto 100px;
   width: 1100px;
   display: flex;
@@ -170,12 +180,14 @@ color: #2f80ed;
 .table__heading{
   margin: 0;
   font-size: 24px;
-  list-style: 1.15;
+  line-height: 1.15;
   font-weight: 600;
   text-align: left;
 }
 
 .table__text{
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
   text-align: left;
 
@@ -185,13 +197,14 @@ color: #2f80ed;
 }
 
 .feynman{
-  height: 890px;
+  min-height: 890px;
   margin: 0;
   padding-top: 100px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 
   color: #000000;
   background-color: #f2f2f2;
@@ -199,6 +212,8 @@ color: #2f80ed;
 }
 
 .feynman__title{
+  margin: 0;
+  padding: 0;
   width: 648px;
   z-index: 3;
 
@@ -208,7 +223,7 @@ color: #2f80ed;
 }
 
 .feynman__subtitle{
-  margin: 70px;
+  margin-top: 70px;
   z-index: 2;
 
   font-size: 36px;
@@ -230,7 +245,9 @@ color: #2f80ed;
   text-decoration: none;
 }
 
-.feynman__scr{
+.feynman__portrait{
+  height: 637px;
+  width: 867px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -248,12 +265,12 @@ color: #2f80ed;
   position: relative;
 
   background-color:  #1f1f1f;
-  color: white;
+  color: #FFFFFF;
   z-index: 0;
 }
 
 .section-title_theme_dark{
-  margin-top: 80px;
+  margin-top: 90px;
   z-index: 3;
 }
 
@@ -261,18 +278,19 @@ color: #2f80ed;
   z-index: 3;
 }
 
-.table-theme-dark{
-  padding: 0 auto 80px;
+.table_theme_dark{
+  margin: 0 auto 90px ;
   z-index: 3;
 }
 
-.table__cell-theme-dark{
+.table__cell_theme_dark{
   width: 200px;
   margin-right: 0;
   margin-top: 80px;
 }
 
-.kaufman__triangie{
+.kaufman__triangle{
+  background-image: url(../images/kaufman-triangle.svg);
   height: 877px;
   width: 877px;
   position: absolute;
@@ -290,10 +308,10 @@ color: #2f80ed;
   justify-content: center;
 
   background-color: #1f1f1f;
-  color: white;
+  color: #FFFFFF;
 }
 
-.footer__columns{
+.footer__columns{  
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -301,18 +319,27 @@ color: #2f80ed;
 }
 .footer__column_content_copyright{
   display: flex;
-  align-items: flex-end;
+  align-items: flex;
   flex-basis: 711px;
 }
 
+.footer__column_content_info{
+  text-align: left;
+}
+
+.footer__column_content_social{
+  text-align: center;
+}
+
 .logo_place_footer{
-  position: absolute;
-  top: 0;
-  left: 0;
   background-image: url(../images/logo_place_footer.svg);
 }
 
 .footer__author{
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
@@ -326,8 +353,11 @@ color: #2f80ed;
 }
 
 .footer__column-links{
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
   padding-bottom: 16px;
+  list-style-type:none
 }
 
 .footer__column-link{
@@ -337,12 +367,9 @@ color: #2f80ed;
   line-height: 30px;
   font-weight: normal;
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
 }
 
 .footer__social-icon{
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
   padding-right: 10px;
 }
