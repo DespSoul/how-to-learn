@@ -279,7 +279,7 @@ color: #2f80ed;
 }
 
 .table_theme_dark{
-  margin: 0 auto 90px ;
+  margin: 0 auto 90px;
   z-index: 3;
 }
 
@@ -357,7 +357,7 @@ color: #2f80ed;
   padding: 0;
   margin-top: 20px;
   padding-bottom: 16px;
-  list-style-type:none
+  list-style-type:none;
 }
 
 .footer__column-link{
