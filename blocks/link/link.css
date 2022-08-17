@@ -1,6 +1,6 @@
 .link{
   text-decoration: none;
-  transition: opacity .3s;
+  transition: opacity .3s linear;
   opacity: 1;
 }
 
